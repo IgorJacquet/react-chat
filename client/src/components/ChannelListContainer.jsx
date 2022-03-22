@@ -4,7 +4,7 @@ import Cookies from 'universal-cookie';
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import MessengerIcon from '../assets/messenger.png'
-import LogoutIcon from '../assets/logout.png'
+import ReturnIcon from '../assets/return_button.png'
 
 const SideBar = () => (
     <div className="channel-list__sidebar">
@@ -15,7 +15,7 @@ const SideBar = () => (
         </div>
         <div className="channel-list__sidebar__icon2">
             <div className="icon1__inner">
-                <img src={LogoutIcon} alt="Logout" width="30" />
+                <img src={ReturnIcon} alt="return_button" width="30" />
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@ const ChannelListContainer = () => {
 		<div className="channel-list__list__wrapper">
 			<CompanyHeader />
 			<ChannelSearch />
-			<ChannelList 
+			{/* <ChannelList 
                     filters={{}}
                     channelRenderFilterFn={() => {}}
                     List={(listProps) => (
@@ -65,7 +65,7 @@ const ChannelListContainer = () => {
 								type="messaging"
 							/>
 						)}
-					/>
+					/> */}
 		</div>
 	</>
   );
