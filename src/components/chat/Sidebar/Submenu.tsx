@@ -51,17 +51,7 @@ const Submenu: FC<SidebarLinkProps> = ({ item }) => {
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
-                <div>{item?.subnav && subnav ? item?.iconOpened : item?.iconClosed}</div>
             </SidebarLink>
-            {subnav &&
-                item?.subnav?.map((subnavItem, index) => {
-                    return (
-                        <DropdownLink to={subnavItem.path} key={index}>
-                            {subnavItem.icon}
-                            <SidebarLabel>{subnavItem.title}</SidebarLabel>
-                        </DropdownLink>
-                    );
-                })}
         </>
     );
 };

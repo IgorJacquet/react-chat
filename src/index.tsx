@@ -11,6 +11,7 @@ import ChatPage from './components/chat/ChatPage'
 import './index.css';
 import { Provider } from 'react-redux';
 import store from './store';
+import SettingsPage from './components/chat/settings/SettingsPage';
 
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="/signup" element={<NewUser />}/>
       <Route path='/profile/stats'/>
       <Route path='/chat' element={<ChatPage />}/>
+      <Route path='/chat/settings' element={<SettingsPage />}/>
     </Routes>
   </BrowserRouter>
   </Provider>

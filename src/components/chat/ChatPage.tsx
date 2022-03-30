@@ -8,9 +8,9 @@ const ChatPage = () =>(
 	<Fragment>
 		<StyledPageContainer>
 			<ChatArea />
+			<Sidebar />
 			<MessageSender/>
 		</StyledPageContainer>
-		<Sidebar />
 	</Fragment>
 );
 

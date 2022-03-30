@@ -15,7 +15,7 @@ const Nav = styled.div`
 `;
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
-    width: 250px;
+    width: 20%;
     height: 100vh;
     background-color: black;
     position: fixed;

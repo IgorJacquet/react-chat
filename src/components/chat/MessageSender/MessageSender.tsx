@@ -7,8 +7,8 @@ import { readRecord } from '../../common/localStorageService';
 import { getTime12Hours, getTime24hours } from '../../common/common';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { NavLink } from "react-router-dom";
-import SettingsPage from '../Settings/SettingsPage';
+import { Link } from "react-router-dom";
+import SettingsPage from '../settings/SettingsPage';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 
 interface IMessageSenderDispatchProps {
@@ -44,9 +44,9 @@ export class MessageSender extends React.Component {
     return (
       <StyledMessageSender>
 		<button>
-          <NavLink to='/chat/settings'>
-            <FontAwesomeIcon icon={faCog} color="white" size="lg"/>
-          </NavLink>
+          <Link to='/chat/settings'>
+            <FontAwesomeIcon icon={faCog} color="white" size="2x"/>
+          </Link>
         </button>
         <input id='send-message-input' type='text' ref={this.messagesInputRef} value={chatMessage}
                onChange={this.handleOnChange}/>

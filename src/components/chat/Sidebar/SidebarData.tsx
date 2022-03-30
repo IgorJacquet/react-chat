@@ -1,237 +1,240 @@
-import {
-    AiFillCaretDown,
-    AiFillCaretUp,
-    AiOutlineHistory,
-    AiOutlineHome,
-    AiOutlineMoneyCollect,
-    AiOutlineUser
-} from 'react-icons/ai';
-import { FaCog, FaOpencart } from 'react-icons/fa';
+import { FaUsers } from 'react-icons/fa';
+import { HiUsers } from 'react-icons/hi';
 import { SidebarItem } from './models/SidebarItem';
 
 export const SidebarData: SidebarItem[] = [
     {
-        title: 'Overview',
-        path: '/overview',
-        icon: <AiOutlineHome />,
-        iconClosed: <AiFillCaretDown />,
-        iconOpened: <AiFillCaretUp />,
-        subnav: [
-            {
-                title: 'Users',
-                path: '/overview/users',
-                icon: <AiOutlineUser />
-            },
-            {
-                title: 'Revenue',
-                path: '/overview/revenue',
-                icon: <AiOutlineMoneyCollect />
-            }
-        ]
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     },
     {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
+		id: 1,
+        title: 'Group conversation',
+        path: '/Group_conversation',
+        icon: <FaUsers />
     },
     {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
-    },
-    {
-        title: 'Order',
-        path: '/order',
-        icon: <FaOpencart />
-    },
-    {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
-    },
-    {
-        title: 'Configurations',
-        path: '/configurations',
-        icon: <FaCog />
+		id: 2,
+        title: 'Private message',
+        path: '/Private_message',
+        icon: <HiUsers />
     }
 ];
