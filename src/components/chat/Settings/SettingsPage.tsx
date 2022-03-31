@@ -39,9 +39,95 @@ const SettingsPage = () => {
 					<div className="actions">
 					<Popup
 						trigger={<button className="button"> Select user </button>}
-						position="top center"
-						nested
-					>
+						modal nested>
+						<div className="menu-settings">
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 1</div>
+							<div className="menu-item-settings"> item 2</div>
+							<div className="menu-item-settings"> item 3</div>
+						</div>
 					</Popup>
 					</div>
 				</div>
@@ -58,10 +144,10 @@ const SettingsPage = () => {
 					<button className="close" onClick={close}>
 					&times;
 					</button>
-					<div className="header"> Make user admin user</div>
+					<div className="header"> Make user admin</div>
 					<div className="content">
 					{' '}
-					<pre>    Select user to make admin    </pre>
+					<pre>  Select a user to give him administrator role  </pre>
 					</div>
 					<div className="actions">
 					<Popup
@@ -89,7 +175,7 @@ const SettingsPage = () => {
 					<div className="header"> Ban user</div>
 					<div className="content">
 					{' '}
-					<pre>      Select user to ban      </pre>
+					<pre>      Select user to ban from the chanel     </pre>
 					</div>
 					<div className="actions">
 					<Popup
@@ -104,7 +190,7 @@ const SettingsPage = () => {
 			</Popup>
 			</h2>)
 		}
-		{ 1 && 3 && (
+		{ 1 && !3 && (
 			<h2>
 				Add password : &nbsp;&nbsp;
 				<Popup trigger={<button>
@@ -112,15 +198,15 @@ const SettingsPage = () => {
 				{(close: any) => (
 				<div className='modal2'>
 					<button className="close" onClick={close}>
-					&times;
+						&times;
 					</button>
 					<div className="header"> Add password to channel</div>
 					<div className="content">
-					{' '}
-					<pre>   Please enter a new password   </pre>
+						{' '}
+						<pre>   Please enter a new password   </pre>
 					</div>
 					<div className="actions">
-					<input id='new password'></input><button ></button>
+						<input id='new password' type="text" ></input><button className='button'>Set password</button>
 					</div>
 				</div>
 				)}
@@ -137,18 +223,14 @@ const SettingsPage = () => {
 					<button className="close" onClick={close}>
 					&times;
 					</button>
-					<div className="header"> Ban user</div>
+					<div className="header"> Modify password</div>
 					<div className="content">
 					{' '}
-					<pre>      Select user to ban      </pre>
+					<pre>      Enter a new password      </pre>
 					</div>
-					<div className="actions">
-					<Popup
-						trigger={<button className="button"> Select user </button>}
-						position="top center"
-						nested
-					>
-					</Popup>
+					<div className="actions"><div className="actions">
+						<input id='new password' type="text" ></input><button className='button'>Set new password</button>
+					</div>
 					</div>
 				</div>
 				)}
@@ -165,14 +247,14 @@ const SettingsPage = () => {
 					<button className="close" onClick={close}>
 					&times;
 					</button>
-					<div className="header"> Ban user</div>
+					<div className="header"> Remove password</div>
 					<div className="content">
 					{' '}
-					<pre>      Select user to ban      </pre>
+					<pre>    Remove the password   </pre>
 					</div>
 					<div className="actions">
 					<Popup
-						trigger={<button className="button"> Select user </button>}
+						trigger={<button className="button"> Remove password </button>}
 						position="top center"
 						nested
 					>
@@ -193,10 +275,10 @@ const SettingsPage = () => {
 					<button className="close" onClick={close}>
 					&times;
 					</button>
-					<div className="header"> Ban user</div>
+					<div className="header"> Mute user</div>
 					<div className="content">
 					{' '}
-					<pre>      Select user to ban      </pre>
+					<pre>      Select user to mute      </pre>
 					</div>
 					<div className="actions">
 					<Popup
@@ -221,10 +303,10 @@ const SettingsPage = () => {
 					<button className="close" onClick={close}>
 					&times;
 					</button>
-					<div className="header"> Ban user</div>
+					<div className="header"> Unmute user</div>
 					<div className="content">
 					{' '}
-					<pre>      Select user to ban      </pre>
+					<pre>      Select user to unmute      </pre>
 					</div>
 					<div className="actions">
 					<Popup

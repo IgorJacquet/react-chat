@@ -12,6 +12,7 @@
 .modal2 > .content {
 	width: 100%;
 	padding: 10px 5px;
+	text-align: center;
 }
 .modal2 > .actions {
 	width: 100%;
@@ -31,4 +32,20 @@
 	background: #ffffff;
 	border-radius: 18px;
 	border: 1px solid #cfcece;
+}
+
+.menu-settings {
+	max-height: 80vh;
+    overflow-y: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.menu-item-settings {
+  cursor: pointer;
+  padding: 5px;
+  height: 70px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  font-size: 32px;
 }
