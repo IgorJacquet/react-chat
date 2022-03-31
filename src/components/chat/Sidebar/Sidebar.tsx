@@ -15,11 +15,15 @@ const Nav = styled.div`
 `;
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
+	//position: relative;
+	z-index: 1;
     width: 20%;
     height: 100vh;
     background-color: black;
     position: fixed;
+	overflow-y: scroll;
     top: 0;
+    bottom: 0;
     left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
     transition: 350ms;
 `;
@@ -41,11 +45,11 @@ const Sidebar: FC = () => {
 
     return (
         <IconContext.Provider value={{ color: '#fff' }}>
-            {/* <Nav>
+            <Nav>
                 <NavIcon to="#" onClick={showSidebar}>
                     <AiOutlineMenu />
                 </NavIcon>
-            </Nav> */}
+            </Nav>
             <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>
                     <NavIcon to="#" onClick={showSidebar}>

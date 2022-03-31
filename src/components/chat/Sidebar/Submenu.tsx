@@ -26,20 +26,6 @@ const SidebarLabel = styled.span`
     margin-left: 1rem;
 `;
 
-const DropdownLink = styled(Link)`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 3.75rem;
-    font-size: 1.125rem;
-    padding-left: 3rem;
-    text-decoration: none;
-    color: #ffffff;
-    &:hover {
-        background-color: #6d44dc;
-    }
-`;
-
 const Submenu: FC<SidebarLinkProps> = ({ item }) => {
     const [subnav, setSubnav] = useState(false);
     const showSubnav = () => setSubnav(!subnav);

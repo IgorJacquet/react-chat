@@ -6,9 +6,9 @@ import StyledPageContainer from "./StyledPageContainer";
 
 const ChatPage = () =>(
 	<Fragment>
+		<Sidebar />
 		<StyledPageContainer>
 			<ChatArea />
-			<Sidebar />
 			<MessageSender/>
 		</StyledPageContainer>
 	</Fragment>

@@ -3,6 +3,8 @@ import { AiOutlineUserAdd, AiOutlineUserDelete, AiOutlineAudioMuted, } from 'rea
 import { GoMute, GoUnmute } from 'react-icons/go';
 import { RiRotateLockFill, RiAdminLine } from 'react-icons/ri';
 import { GiPadlock, GiPadlockOpen } from 'react-icons/gi';
+import Popup from 'reactjs-popup';
+import './SettingsPage.css'
 
 const handleAddUser = () => {
 		
@@ -17,69 +19,224 @@ const SettingsPage = () => {
 		<div className='new-user'>
 			<h1>
 				<u>
-					SETTINGS:
+					SETTINGS : <p/>
 				</u> 
 			</h1>
 		<h2>
-			Add user : 
-				<button onClick={handleAddUser}>
-					<AiOutlineUserAdd />
-				</button>
+			Add user : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<AiOutlineUserAdd /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
+					</button>
+					<div className="header"> Add user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to add      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 		</h2>
 		{ 1 && (
 			<h2>
-				Make a member admin : 
-					<button onClick={handleAddUser}>
-						<RiAdminLine />
+				Make a chat user admin : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<RiAdminLine /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
+					<div className="header"> Make user admin user</div>
+					<div className="content">
+					{' '}
+					<pre>    Select user to make admin    </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		{ (1 || 2) && (
 			<h2>
-				Ban user : 
-					<button onClick={handleAddUser}>
-						<AiOutlineUserDelete />
+				Ban user : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<AiOutlineUserDelete /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
-			</h2>)
-		}
-		{ 1 && !3 && (
-			<h2>
-				Add password : 
-					<button onClick={handleAddUser}>
-						<GiPadlock />
-					</button>
+					<div className="header"> Ban user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to ban      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		{ 1 && 3 && (
 			<h2>
-				Modify password : 
-					<button onClick={handleAddUser}>
-						<RiRotateLockFill />
+				Add password : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<GiPadlock /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
+					<div className="header"> Add password to channel</div>
+					<div className="content">
+					{' '}
+					<pre>   Please enter a new password   </pre>
+					</div>
+					<div className="actions">
+					<input id='new password'></input><button ></button>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		{ 1 && 3 && (
 			<h2>
-				Remove password : 
-					<button onClick={handleAddUser}>
-						<GiPadlockOpen />
+				Modify password : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<RiRotateLockFill /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
+					<div className="header"> Ban user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to ban      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
+			</h2>)
+		}
+		{ 1 && 3 && (
+			<h2>
+				Remove password : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<GiPadlockOpen /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
+					</button>
+					<div className="header"> Ban user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to ban      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		{ (1 || 2) && (
 			<h2>
-				Mute user : 
-					<button onClick={handleAddUser}>
-						<GoMute />
+				Mute user : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<GoMute /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
+					<div className="header"> Ban user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to ban      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		{ (1 || 2) && (
 			<h2>
-				Unmute user : 
-					<button onClick={handleAddUser}>
-						<GoUnmute />
+				Unmute user : &nbsp;&nbsp;
+				<Popup trigger={<button>
+					<GoUnmute /></button>} modal nested>
+				{(close: any) => (
+				<div className='modal2'>
+					<button className="close" onClick={close}>
+					&times;
 					</button>
+					<div className="header"> Ban user</div>
+					<div className="content">
+					{' '}
+					<pre>      Select user to ban      </pre>
+					</div>
+					<div className="actions">
+					<Popup
+						trigger={<button className="button"> Select user </button>}
+						position="top center"
+						nested
+					>
+					</Popup>
+					</div>
+				</div>
+				)}
+			</Popup>
 			</h2>)
 		}
 		</div>

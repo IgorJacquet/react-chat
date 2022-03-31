@@ -1,35 +1,34 @@
-.new-user{
-	width: 100vw;
-	height: 100vh;
-	background-color: #f2f2f2;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.modal2 {
+	font-size: 25px;
+	background-color: grey;
+  }
+.modal2 > .header {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	font-size: 40px;
+	text-align: center;
+	padding: 5px;
 }
-
-.user-form {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: left;
+.modal2 > .content {
+	width: 100%;
+	padding: 10px 5px;
 }
-
-.signup-form{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
+.modal2 > .actions {
+	width: 100%;
+	padding: 10px 5px;
+	margin: auto;
+	text-align: center;
 }
-
-input{
-	width: 50vw;
-	height: 30px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	margin-bottom: 10px;
-	padding-left: 10px;
+.modal2 > .close {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	padding: 2px 5px;
+	line-height: 20px;
+	right: 10px;
+	top: 5px;
+	font-size: 24px;
+	background: #ffffff;
+	border-radius: 18px;
+	border: 1px solid #cfcece;
 }
